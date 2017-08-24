@@ -1,4 +1,4 @@
-import http from 'http'
+import http from 'http';
 import express from 'express';
 import { create } from 'laxar';
 import artifacts from 'laxar-loader/artifacts?flow=main&theme=default';
@@ -20,21 +20,26 @@ const config = {
    theme: 'default'
 };
 
-create( [  ], artifacts, config )
-   .flow( 'main', document.querySelector( '[data-ax-page]' ) )
+const element = ''; //document.querySelector( '[data-ax-page]' )
+
+create( [], artifacts, config )
+   .flow( 'main', element )
    .bootstrap();
 
-const app = express()
-app.get('/', (req, res) => {
+const app = express();
+app.get( '/', (req, res) => {
    res.send( 'hello' + JSON.stringify( artifacts ) )
-})
-const server = http.createServer(app)
-let currentApp = app
-server.listen(3000)
+} );
+
+const server = http.createServer(app);
+let currentApp = app;
+
+server.listen(3000);
+
 if (module.hot) {
    module.hot.accept('./server', () => {
-      server.removeListener('request', currentApp)
-      server.on('request', app)
+      server.removeListener('request', currentApp);
+      server.on('request', app);
       currentApp = app
    })
 }

@@ -12,7 +12,8 @@
     "client:start": "webpack-dev-server --hot --inline --config \"./webpack.config.client.js\" --port 8080",
     "server:watch": "webpack --watch --config \"./webpack.config.server.js\"",
     "server:start": "nodemon \"./build/init-server.js\" --watch \"./build\"",
-    "development": "npm-run-all --parallel client:start server:watch server:start"
+    "development": "npm-run-all --parallel client:start server:watch server:start",
+    "dev": "npm run development"
   },
   "dependencies": {
     "laxar": "^2.0.0",

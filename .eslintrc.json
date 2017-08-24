@@ -1,0 +1,7 @@
+{
+   "extends": "laxarjs/node",
+   "rules": {
+      "no-restricted-imports": "off",
+      "no-var": "off"
+   }
+}

@@ -1,13 +1,10 @@
-/**
- * Copyright 2017
- */
 const path = require( 'path' );
 const ExtractTextPlugin = require( 'extract-text-webpack-plugin' );
 const webpack = require( 'webpack' );
 
 //////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
-function getConfig () {
+function getConfig() {
 
    const outputPath = 'build/';
 
