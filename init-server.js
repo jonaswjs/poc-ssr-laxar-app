@@ -20,7 +20,10 @@ const config = {
    theme: 'default'
 };
 
-const element = ''; //document.querySelector( '[data-ax-page]' )
+const element = {
+   className: '',
+   innerHTML: ''
+}; //document.querySelector( '[data-ax-page]' )
 
 create( [], artifacts, config )
    .flow( 'main', element )
