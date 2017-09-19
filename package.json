@@ -16,6 +16,7 @@
     "dev": "npm run development"
   },
   "dependencies": {
+    "jsdom": "^11.2.0",
     "laxar": "^2.0.0",
     "laxar-patterns": "^2.0.0",
     "laxar-uikit": "^2.0.0"

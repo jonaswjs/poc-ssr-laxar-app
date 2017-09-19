@@ -1,0 +1,9 @@
+[submodule "application/lib/laxar"]
+	path = application/lib/laxar
+	url = git@github.com:LaxarJS/laxar.git
+[submodule "application/lib/laxar-master"]
+	path = application/lib/laxar-master
+	url = git@github.com:LaxarJS/laxar.git
+[submodule "application/lib/laxar-client"]
+	path = application/lib/laxar-client
+	url = git@github.com:LaxarJS/laxar.git

@@ -29,7 +29,7 @@ function getConfig() {
          modules: [ path.resolve( __dirname, 'node_modules' ) ],
          extensions: [ '.js' ],
          alias: {
-            'laxar': path.resolve(__dirname, 'application/lib/laxar' ),
+            'laxar': path.resolve(__dirname, 'application/lib/laxar-client' ),
             'default.theme': path.resolve(__dirname, '../application/lib/laxar-uikit/theme/default.theme' )
          }
       },
